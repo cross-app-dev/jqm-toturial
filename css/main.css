@@ -1,0 +1,13 @@
+#tutorial-banner{
+    max-width: 100%;
+}
+
+.profile-pic-container{
+    width: 200px;
+    height: 200px;
+}
+
+.profile-pic-container img{
+    width: 100%;
+    height: auto;
+}
