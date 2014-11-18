@@ -22,9 +22,18 @@
         <div class="ui-content">
             <img id="tutorial-banner" src="images/taekwondo-banner.jpg" alt="Taekwondow Banner">
         </div>
+
+        <!-- make sure that footer bar is fixed at the bottom of the screen during scrolling
+        of the tutorial -->
         <div data-role="footer" data-position="fixed">
-            <!-- make sure that footer bar is fixed at the bottom of the screen during scrolling of the tutorial -->
-            <a href="#about" data-role="button">About</a>
+
+            <!-- By default, toolbars don't have any padding to accommodate its contents.
+            To add padding inside of a full-width toolbar, wrap the toolbar's contents in an
+            element and add class ui-bar to that element or apply your own padding rule in
+            your custom CSS.-->
+            <div class="page-footer">
+                <a href="#about" data-role="button">About</a>
+            </div>
         </div>
     </section>
 
@@ -40,8 +49,10 @@
             </div>
         </div>
         <div data-role="footer" data-position="fixed">
-            <a href="#homepage" data-role="button">Home</a>
-            <a href="#about" data-role="button">About</a>
+            <div class="page-footer">
+                <a href="#homepage" data-role="button">Home</a>
+                <a href="#about" data-role="button">About</a>
+            </div>
         </div>
     </div>
 </body>

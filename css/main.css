@@ -11,3 +11,14 @@
     width: 100%;
     height: auto;
 }
+
+/* Styling footer*/
+.page-footer a[href="#about"]{
+    float: right;
+    margin-right: 2%;
+}
+
+.page-footer a[href="#homepage"]{
+    float: left;
+    margin-left: 2%;
+}
