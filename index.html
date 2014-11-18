@@ -15,15 +15,16 @@
 
 <body>
     <!-- This is the first page -->
-    <section id="firstpage" data-role="page">
+    <section id="homepage" data-role="page">
         <div data-role="header">
             <h1>Taekwondo Guide</h1>
         </div>
         <div class="ui-content">
-            <img id="tutorial-banner" src="images/taekwondo-banner.jpg">
+            <img id="tutorial-banner" src="images/taekwondo-banner.jpg" alt="Taekwondow Banner">
         </div>
-        <div data-role="footer">
-            <p><a href="#about">About</a></p>
+        <div data-role="footer" data-position="fixed">
+            <!-- make sure that footer bar is fixed at the bottom of the screen during scrolling of the tutorial -->
+            <a href="#about" data-role="button">About</a>
         </div>
     </section>
 
@@ -35,11 +36,12 @@
         <div class="ui-content">
             <!--  create div container to resize the image properly.-->
             <div class="profile-pic-container">
-                <img src="images/profile-pic-small.jpg">
+                <img src="images/profile-pic-small.jpg" alt="developer profile pic">
             </div>
         </div>
-        <div data-role="footer">
-            <h2>Page Content Footer</h2>
+        <div data-role="footer" data-position="fixed">
+            <a href="#homepage" data-role="button">Home</a>
+            <a href="#about" data-role="button">About</a>
         </div>
     </div>
 </body>
