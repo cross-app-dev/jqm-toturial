@@ -1,4 +1,4 @@
-#tutorial-banner{
+img{
     width: 100%;
 }
 
@@ -8,12 +8,11 @@
 }
 
 .profile-pic-container img{
-    width: 100%;
     height: auto;
 }
 
 /* Styling footer*/
-.page-footer a[href="#about"]{
+.page-footer a[href="#info"]{
     float: right;
     margin-right: 2%;
 }
@@ -21,4 +20,15 @@
 .page-footer a[href="#homepage"]{
     float: left;
     margin-left: 2%;
+}
+
+/**/
+.ui-icon-start:after{
+    background-image: url("../images/ic_start.jpg");
+    background-size: cover;
+}
+
+a[href="#page-01"]{
+    width: 15%;
+    margin: 0 40%;
 }
