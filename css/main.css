@@ -22,13 +22,28 @@ img{
     margin-left: 2%;
 }
 
-/**/
+/***    Custom Start Button ***/
+/* Set icon for the button*/
 .ui-icon-start:after{
     background-image: url("../images/ic_start.jpg");
     background-size: cover;
 }
-
+/* set width & height of the button*/
+/*
 a[href="#page-01"]{
     width: 15%;
     margin: 0 40%;
+}
+*/
+
+
+/***    Page tutorial grid  ***/
+div[id^="page-"] .ui-block-a,
+div[id^="page-"] .ui-block-c{
+    width: 10%;
+}
+div[id^="page-"] .ui-block-b{
+    width: 60%;
+    margin: 0 10%;
+
 }

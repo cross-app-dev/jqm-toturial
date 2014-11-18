@@ -21,7 +21,7 @@
         </div>
         <div class="ui-content">
             <img src="images/taekwondo-banner.jpg" alt="Taekwondow Banner">
-            <a href="#page-01" class="ui-btn ui-icon-start ui-corner-all ui-btn-icon-top ui-btn-inline">Start</a>
+            <a href="#page-01" class="ui-btn ui-icon-start ui-corner-all ui-btn-icon-top ui-btn-inline" data-transition="flip">Start</a>
         </div>
 
         <!-- make sure that footer bar is fixed at the bottom of the screen during scrolling
@@ -52,9 +52,202 @@
         <div data-role="footer" data-position="fixed">
             <div class="page-footer">
                 <a href="#homepage" class="ui-btn ui-icon-home ui-corner-all ui-btn-icon-notext">Home</a>
-                <a href="#about" class="ui-btn ui-icon-info ui-corner-all ui-btn-icon-notext">About</a>
+                <a href="#info" class="ui-btn ui-icon-info ui-corner-all ui-btn-icon-notext">About</a>
             </div>
         </div>
     </div>
+
+
+
+    <!-- This is the first page in the tutorial. All the tutorial steps should be shown in a
+    dialog.   -->
+    <div id="page-01" data-role="page" data-dialog="true" data-close-btn="right">
+        <div data-role="header">
+            <h1>Step 1 of 10</h1>
+        </div>
+        <div class="ui-content ui-grid-b">
+            <div class="ui-block-a">
+                <a href="#homepage" class="ui-btn ui-icon-carat-l ui-corner-all ui-btn-icon-notext">Previous</a>
+            </div>
+            <div class="ui-block-b">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum nisl auctor, congue mi eu, aliquet augue. Quisque dictum, urna sed malesuada cursus, velit diam consequat nunc, vel varius enim leo interdum mauris. Pellentesque vulputate vitae nunc nec feugiat. Nulla facilisi. Nullam congue sagittis aliquam. Vestibulum porttitor ligula a lectus tempor pretium. Nulla vel ante eros. Vestibulum viverra est eros, ac pharetra quam dapibus at. Curabitur arcu urna, aliquet non dolor a, facilisis aliquam dui. Proin semper tellus sem, nec feugiat sem aliquet eget. Sed convallis vehicula porta. Duis efficitur ex et nulla venenatis elementum. Sed vestibulum ante in tincidunt sollicitudin. Ut consectetur, odio in molestie pharetra, nisl massa tempus dui, id hendrerit leo nisl et mauris.</p>
+            </div>
+            <div class="ui-block-c">
+                <a href="#page-02" class="ui-btn ui-icon-carat-r ui-corner-all ui-btn-icon-notext">Next</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- This is the second page in the tutorial. All the tutorial steps should be shown in a
+    dialog.   -->
+    <div id="page-02" data-role="page" data-dialog="true" data-close-btn="right">
+        <div data-role="header">
+            <h1>Step 2 of 10</h1>
+        </div>
+        <div class="ui-content ui-grid-b">
+            <div class="ui-block-a">
+                <a href="#page-01" class="ui-btn ui-icon-carat-l ui-corner-all ui-btn-icon-notext">Previous</a>
+            </div>
+            <div class="ui-block-b">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum nisl auctor, congue mi eu, aliquet augue. Quisque dictum, urna sed malesuada cursus, velit diam consequat nunc, vel varius enim leo interdum mauris. Pellentesque vulputate vitae nunc nec feugiat. Nulla facilisi. Nullam congue sagittis aliquam. Vestibulum porttitor ligula a lectus tempor pretium. Nulla vel ante eros. Vestibulum viverra est eros, ac pharetra quam dapibus at. Curabitur arcu urna, aliquet non dolor a, facilisis aliquam dui. Proin semper tellus sem, nec feugiat sem aliquet eget. Sed convallis vehicula porta. Duis efficitur ex et nulla venenatis elementum. Sed vestibulum ante in tincidunt sollicitudin. Ut consectetur, odio in molestie pharetra, nisl massa tempus dui, id hendrerit leo nisl et mauris.</p>
+            </div>
+            <div class="ui-block-c">
+                <a href="#page-03" class="ui-btn ui-icon-carat-r ui-corner-all ui-btn-icon-notext">Next</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- This is the third page in the tutorial. All the tutorial steps should be shown in a
+    dialog.   -->
+    <div id="page-03" data-role="page" data-dialog="true" data-close-btn="right">
+        <div data-role="header">
+            <h1>Step 3 of 10</h1>
+        </div>
+        <div class="ui-content ui-grid-b">
+            <div class="ui-block-a">
+                <a href="#page-02" class="ui-btn ui-icon-carat-l ui-corner-all ui-btn-icon-notext">Previous</a>
+            </div>
+            <div class="ui-block-b">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum nisl auctor, congue mi eu, aliquet augue. Quisque dictum, urna sed malesuada cursus, velit diam consequat nunc, vel varius enim leo interdum mauris. Pellentesque vulputate vitae nunc nec feugiat. Nulla facilisi. Nullam congue sagittis aliquam. Vestibulum porttitor ligula a lectus tempor pretium. Nulla vel ante eros. Vestibulum viverra est eros, ac pharetra quam dapibus at. Curabitur arcu urna, aliquet non dolor a, facilisis aliquam dui. Proin semper tellus sem, nec feugiat sem aliquet eget. Sed convallis vehicula porta. Duis efficitur ex et nulla venenatis elementum. Sed vestibulum ante in tincidunt sollicitudin. Ut consectetur, odio in molestie pharetra, nisl massa tempus dui, id hendrerit leo nisl et mauris.</p>
+            </div>
+            <div class="ui-block-c">
+                <a href="#page-04" class="ui-btn ui-icon-carat-r ui-corner-all ui-btn-icon-notext">Next</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- This is the fourth page in the tutorial. All the tutorial steps should be shown in a
+    dialog.   -->
+    <div id="page-04" data-role="page" data-dialog="true" data-close-btn="right">
+        <div data-role="header">
+            <h1>Step 4 of 10</h1>
+        </div>
+        <div class="ui-content ui-grid-b">
+            <div class="ui-block-a">
+                <a href="#page-03" class="ui-btn ui-icon-carat-l ui-corner-all ui-btn-icon-notext">Previous</a>
+            </div>
+            <div class="ui-block-b">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum nisl auctor, congue mi eu, aliquet augue. Quisque dictum, urna sed malesuada cursus, velit diam consequat nunc, vel varius enim leo interdum mauris. Pellentesque vulputate vitae nunc nec feugiat. Nulla facilisi. Nullam congue sagittis aliquam. Vestibulum porttitor ligula a lectus tempor pretium. Nulla vel ante eros. Vestibulum viverra est eros, ac pharetra quam dapibus at. Curabitur arcu urna, aliquet non dolor a, facilisis aliquam dui. Proin semper tellus sem, nec feugiat sem aliquet eget. Sed convallis vehicula porta. Duis efficitur ex et nulla venenatis elementum. Sed vestibulum ante in tincidunt sollicitudin. Ut consectetur, odio in molestie pharetra, nisl massa tempus dui, id hendrerit leo nisl et mauris.</p>
+            </div>
+            <div class="ui-block-c">
+                <a href="#page-05" class="ui-btn ui-icon-carat-r ui-corner-all ui-btn-icon-notext">Next</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- This is the fifth page in the tutorial. All the tutorial steps should be shown in a
+    dialog.   -->
+    <div id="page-05" data-role="page" data-dialog="true" data-close-btn="right">
+        <div data-role="header">
+            <h1>Step 5 of 10</h1>
+        </div>
+        <div class="ui-content ui-grid-b">
+            <div class="ui-block-a">
+                <a href="#page-04" class="ui-btn ui-icon-carat-l ui-corner-all ui-btn-icon-notext">Previous</a>
+            </div>
+            <div class="ui-block-b">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum nisl auctor, congue mi eu, aliquet augue. Quisque dictum, urna sed malesuada cursus, velit diam consequat nunc, vel varius enim leo interdum mauris. Pellentesque vulputate vitae nunc nec feugiat. Nulla facilisi. Nullam congue sagittis aliquam. Vestibulum porttitor ligula a lectus tempor pretium. Nulla vel ante eros. Vestibulum viverra est eros, ac pharetra quam dapibus at. Curabitur arcu urna, aliquet non dolor a, facilisis aliquam dui. Proin semper tellus sem, nec feugiat sem aliquet eget. Sed convallis vehicula porta. Duis efficitur ex et nulla venenatis elementum. Sed vestibulum ante in tincidunt sollicitudin. Ut consectetur, odio in molestie pharetra, nisl massa tempus dui, id hendrerit leo nisl et mauris.</p>
+            </div>
+            <div class="ui-block-c">
+                <a href="#page-06" class="ui-btn ui-icon-carat-r ui-corner-all ui-btn-icon-notext">Next</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- This is the sixth page in the tutorial. All the tutorial steps should be shown in a
+    dialog.   -->
+    <div id="page-06" data-role="page" data-dialog="true" data-close-btn="right">
+        <div data-role="header">
+            <h1>Step 6 of 10</h1>
+        </div>
+        <div class="ui-content ui-grid-b">
+            <div class="ui-block-a">
+                <a href="#page-05" class="ui-btn ui-icon-carat-l ui-corner-all ui-btn-icon-notext">Previous</a>
+            </div>
+            <div class="ui-block-b">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum nisl auctor, congue mi eu, aliquet augue. Quisque dictum, urna sed malesuada cursus, velit diam consequat nunc, vel varius enim leo interdum mauris. Pellentesque vulputate vitae nunc nec feugiat. Nulla facilisi. Nullam congue sagittis aliquam. Vestibulum porttitor ligula a lectus tempor pretium. Nulla vel ante eros. Vestibulum viverra est eros, ac pharetra quam dapibus at. Curabitur arcu urna, aliquet non dolor a, facilisis aliquam dui. Proin semper tellus sem, nec feugiat sem aliquet eget. Sed convallis vehicula porta. Duis efficitur ex et nulla venenatis elementum. Sed vestibulum ante in tincidunt sollicitudin. Ut consectetur, odio in molestie pharetra, nisl massa tempus dui, id hendrerit leo nisl et mauris.</p>
+            </div>
+            <div class="ui-block-c">
+                <a href="#page-07" class="ui-btn ui-icon-carat-r ui-corner-all ui-btn-icon-notext">Next</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- This is the seventh page in the tutorial. All the tutorial steps should be shown in a
+    dialog.   -->
+    <div id="page-07" data-role="page" data-dialog="true" data-close-btn="right">
+        <div data-role="header">
+            <h1>Step 7 of 10</h1>
+        </div>
+        <div class="ui-content ui-grid-b">
+            <div class="ui-block-a">
+                <a href="#page-06" class="ui-btn ui-icon-carat-l ui-corner-all ui-btn-icon-notext">Previous</a>
+            </div>
+            <div class="ui-block-b">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum nisl auctor, congue mi eu, aliquet augue. Quisque dictum, urna sed malesuada cursus, velit diam consequat nunc, vel varius enim leo interdum mauris. Pellentesque vulputate vitae nunc nec feugiat. Nulla facilisi. Nullam congue sagittis aliquam. Vestibulum porttitor ligula a lectus tempor pretium. Nulla vel ante eros. Vestibulum viverra est eros, ac pharetra quam dapibus at. Curabitur arcu urna, aliquet non dolor a, facilisis aliquam dui. Proin semper tellus sem, nec feugiat sem aliquet eget. Sed convallis vehicula porta. Duis efficitur ex et nulla venenatis elementum. Sed vestibulum ante in tincidunt sollicitudin. Ut consectetur, odio in molestie pharetra, nisl massa tempus dui, id hendrerit leo nisl et mauris.</p>
+            </div>
+            <div class="ui-block-c">
+                <a href="#page-08" class="ui-btn ui-icon-carat-r ui-corner-all ui-btn-icon-notext">Next</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- This is the eighth page in the tutorial. All the tutorial steps should be shown in a
+    dialog.   -->
+    <div id="page-08" data-role="page" data-dialog="true" data-close-btn="right">
+        <div data-role="header">
+            <h1>Step 8 of 10</h1>
+        </div>
+        <div class="ui-content ui-grid-b">
+            <div class="ui-block-a">
+                <a href="#page-07" class="ui-btn ui-icon-carat-l ui-corner-all ui-btn-icon-notext">Previous</a>
+            </div>
+            <div class="ui-block-b">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum nisl auctor, congue mi eu, aliquet augue. Quisque dictum, urna sed malesuada cursus, velit diam consequat nunc, vel varius enim leo interdum mauris. Pellentesque vulputate vitae nunc nec feugiat. Nulla facilisi. Nullam congue sagittis aliquam. Vestibulum porttitor ligula a lectus tempor pretium. Nulla vel ante eros. Vestibulum viverra est eros, ac pharetra quam dapibus at. Curabitur arcu urna, aliquet non dolor a, facilisis aliquam dui. Proin semper tellus sem, nec feugiat sem aliquet eget. Sed convallis vehicula porta. Duis efficitur ex et nulla venenatis elementum. Sed vestibulum ante in tincidunt sollicitudin. Ut consectetur, odio in molestie pharetra, nisl massa tempus dui, id hendrerit leo nisl et mauris.</p>
+            </div>
+            <div class="ui-block-c">
+                <a href="#page-09" class="ui-btn ui-icon-carat-r ui-corner-all ui-btn-icon-notext">Next</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- This is the nineth page in the tutorial. All the tutorial steps should be shown in a
+    dialog.   -->
+    <div id="page-09" data-role="page" data-dialog="true" data-close-btn="right">
+        <div data-role="header">
+            <h1>Step 9 of 10</h1>
+        </div>
+        <div class="ui-content ui-grid-b">
+            <div class="ui-block-a">
+                <a href="#page-08" class="ui-btn ui-icon-carat-l ui-corner-all ui-btn-icon-notext">Previous</a>
+            </div>
+            <div class="ui-block-b">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum nisl auctor, congue mi eu, aliquet augue. Quisque dictum, urna sed malesuada cursus, velit diam consequat nunc, vel varius enim leo interdum mauris. Pellentesque vulputate vitae nunc nec feugiat. Nulla facilisi. Nullam congue sagittis aliquam. Vestibulum porttitor ligula a lectus tempor pretium. Nulla vel ante eros. Vestibulum viverra est eros, ac pharetra quam dapibus at. Curabitur arcu urna, aliquet non dolor a, facilisis aliquam dui. Proin semper tellus sem, nec feugiat sem aliquet eget. Sed convallis vehicula porta. Duis efficitur ex et nulla venenatis elementum. Sed vestibulum ante in tincidunt sollicitudin. Ut consectetur, odio in molestie pharetra, nisl massa tempus dui, id hendrerit leo nisl et mauris.</p>
+            </div>
+            <div class="ui-block-c">
+                <a href="#page-10" class="ui-btn ui-icon-carat-r ui-corner-all ui-btn-icon-notext">Next</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- This is the tenth page in the tutorial. All the tutorial steps should be shown in a
+    dialog.   -->
+    <div id="page-10" data-role="page" data-dialog="true" data-close-btn="right">
+        <div data-role="header">
+            <h1>Step 10 of 10</h1>
+        </div>
+        <div class="ui-content ui-grid-b">
+            <div class="ui-block-a">
+                <a href="#page-09" class="ui-btn ui-icon-carat-l ui-corner-all ui-btn-icon-notext">Previous</a>
+            </div>
+            <div class="ui-block-b">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum nisl auctor, congue mi eu, aliquet augue. Quisque dictum, urna sed malesuada cursus, velit diam consequat nunc, vel varius enim leo interdum mauris. Pellentesque vulputate vitae nunc nec feugiat. Nulla facilisi. Nullam congue sagittis aliquam. Vestibulum porttitor ligula a lectus tempor pretium. Nulla vel ante eros. Vestibulum viverra est eros, ac pharetra quam dapibus at. Curabitur arcu urna, aliquet non dolor a, facilisis aliquam dui. Proin semper tellus sem, nec feugiat sem aliquet eget. Sed convallis vehicula porta. Duis efficitur ex et nulla venenatis elementum. Sed vestibulum ante in tincidunt sollicitudin. Ut consectetur, odio in molestie pharetra, nisl massa tempus dui, id hendrerit leo nisl et mauris.</p>
+            </div>
+            <div class="ui-block-c">
+                <a href="#" class="ui-btn ui-icon-carat-r ui-corner-all ui-btn-icon-notext ui-state-disabled">Next</a>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
