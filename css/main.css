@@ -29,12 +29,10 @@ img{
     background-size: cover;
 }
 /* set width & height of the button*/
-/*
-a[href="#page-01"]{
+#homepage a[href="#page-01"]{
     width: 15%;
     margin: 0 40%;
 }
-*/
 
 
 /***    Page tutorial grid  ***/
