@@ -11,17 +11,6 @@ img{
     height: auto;
 }
 
-/* Styling footer*/
-.page-footer a[href="#info"]{
-    float: right;
-    margin-right: 2%;
-}
-
-.page-footer a[href="#homepage"]{
-    float: left;
-    margin-left: 2%;
-}
-
 /***    Custom Start Button ***/
 /* Set icon for the button*/
 .ui-icon-start:after{
@@ -31,7 +20,7 @@ img{
 /* set width & height of the button*/
 #homepage a[href="#page-01"]{
     width: 15%;
-    margin: 0 40%;
+    margin: 1% 40%;
 }
 
 

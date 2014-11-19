@@ -33,7 +33,12 @@
             element and add class ui-bar to that element or apply your own padding rule in
             your custom CSS.-->
             <div class="page-footer">
-                <a href="#info" class="ui-btn ui-icon-info ui-corner-all ui-btn-icon-notext">About</a>
+                <div data-role="navbar" data-iconpos="left">
+                  <ul>
+                    <li><a href="#home" data-icon="home" data-role="button">Home</a></li>
+                    <li><a href="#info" data-icon="info" data-role="button" data-transition="slideup">Information</a></li>
+                  </ul>
+                </div>
             </div>
         </div>
     </section>
@@ -51,8 +56,13 @@
         </div>
         <div data-role="footer" data-position="fixed">
             <div class="page-footer">
-                <a href="#homepage" class="ui-btn ui-icon-home ui-corner-all ui-btn-icon-notext">Home</a>
-                <a href="#info" class="ui-btn ui-icon-info ui-corner-all ui-btn-icon-notext">About</a>
+                <div data-role="navbar" data-iconpos="left">
+                  <ul>
+                    <li><a href="#homepage" data-icon="home" data-role="button" data-transition="slideup">Home</a></li>
+                    <li><a href="#" data-icon="info" data-role="button">Information</a></li>
+                  </ul>
+                </div>
+
             </div>
         </div>
     </div>

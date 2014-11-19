@@ -66,9 +66,29 @@ $(document).ready(function(ev){
     });
 
     $(document).on("pagecontainerbeforechange", function(ev, data){
-//        console.log("Before change the page");
-//        console.log(data.options.isDlgClosePressed);
-        if('undefined' === typeof data.options.isDlgClosePressed){
+        console.log("Before change the page");
+
+        console.log(data.toPage);
+
+        /*  The main point here is to find out when the user clicks close button of the
+            dialog, then apply reverse flip transition while navigating toward home page.
+
+            There are two cases that should be handled here:
+            1. When the user clicks on close button of the dialog, this is achieved by
+                checking the type of isDlgClosePressed, if it is undefined, this means that
+                neither the previous button nor the next button has been pressed. So the
+                page change definitely occurs due to close button of the dialog.
+
+            2. When the user click on home/inof button, the same variable isDlgClosePressed
+                is undefined as well and this makes the transition not to follow what
+                has been set in the HTML file. So I have to add this corner case as well
+                inside if statement such that if the target page is neither homepage nor
+                info.*/
+        var regex=/#(info|homepage)$/;
+        if(('undefined' === typeof data.options.isDlgClosePressed) &&
+            ('string' === typeof data.toPage) &&
+            (!data.toPage.match(regex))) {
+
             data.options.transition = "flip";
             data.options.isDlgClosePressed = true;
 //            console.log("close button is pressed");
