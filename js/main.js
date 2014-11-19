@@ -42,6 +42,10 @@ $(document).ready(function(ev){
             changeHash:false,
             role:"page",
             transition:"slide",
+
+            /* This variable is used to differeniate whether the dialog is hidden because
+             of close button is pressed or next/prev button is pressed. Since there is no
+             special jquery mobile event for close button of the dialog. */
             isDlgClosePressed:false
         };
 
