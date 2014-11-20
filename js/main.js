@@ -5,32 +5,28 @@ Checklist of app delivery:
 
 2. info/about page that provides your personal info as the developer.
 
-3. links to the home page and info page should be presented as two buttons that fill a fixed footer at the bottom of the screen.
-
-4. Clicking the start tutorial button should resume at whatever step the user last viewed.
-
 5. At least half of the steps should have images.
 
-6. Tapping the close button will take the user back to the Home page and save the current
-step within the tutorial. Clicking on the start button again will take the user back to that
-same step.
-
-7. Users should be able to move backwards or forwards through each step in the tutorial.
-
 8. Your App must have a custom theme that you create with the theme roller and import.
-
-Useful attributes:
-data-role=page, page-dialog=true,
-page-tranisition=flip/slide
-to buttons in the footer, use class ui-btn-right or ui-btn
-apply class ui-bar to the footer it gives more spaces instead of crowded elements in the footer.
-Search for ui-btn-icon
-ui-mini, ui-btn-inline or u can use controlgroup instead and set data-type attribute to horizontal or vertical
-buttons with icons: ui-btn-arrow-u/l/r/d ui-btn-icon-top/bottom/left/right ui-corner-all ui-btn-notext
 **************************/
+var localStorageKey = "show0017_step";
+var tutorialPagesPrefix = "#page-";
 
 $(document).ready(function(ev){
 
+    /* Set click listener for start button. */
+    $('a:contains("Start")').on("click", function(ev){
+        /*console.log("Start button is clikced");*/
+
+        ev.preventDefault();
+
+        var lastPageHref = localStorage.getItem(localStorageKey);
+        lastPageHref = (null === lastPageHref)? tutorialPagesPrefix+"01": lastPageHref;
+
+        $.mobile.pageContainer.pagecontainer("change", lastPageHref , {transition:"flip"});
+    });
+
+    /* Set click listener for prev/next buttons*/
     $('a:contains("Previous"),a:contains("Next")').on("click", function(ev){
         console.log("previous/next button has been clicked");
 
@@ -52,9 +48,6 @@ $(document).ready(function(ev){
         if("Previous" === $(this).text()){
             pageChangeOpts.reverse = true;
         }
-        if("#homepage" === ev.target.hash){
-            pageChangeOpts.transition = "flip";
-        }
 
 
         /* Move the next/previous page but avoid creating new entry in the browser
@@ -65,33 +58,19 @@ $(document).ready(function(ev){
                                              pageChangeOpts);
     });
 
-    $(document).on("pagecontainerbeforechange", function(ev, data){
-        console.log("Before change the page");
+    /* Set listene for page container object before changing any page. */
+    $(document).on("pagecontainerbeforechange ", function(ev, data){
 
-        console.log(data.toPage);
+        /* save laste visited page tutorial when closing. This can be achieved by
+        checking previous and target pages ids.*/
+        var prevPageRegex=/(page-\d+)$/;
+        var myResult = data.prevPage["0"].id.match(prevPageRegex);
 
-        /*  The main point here is to find out when the user clicks close button of the
-            dialog, then apply reverse flip transition while navigating toward home page.
-
-            There are two cases that should be handled here:
-            1. When the user clicks on close button of the dialog, this is achieved by
-                checking the type of isDlgClosePressed, if it is undefined, this means that
-                neither the previous button nor the next button has been pressed. So the
-                page change definitely occurs due to close button of the dialog.
-
-            2. When the user click on home/inof button, the same variable isDlgClosePressed
-                is undefined as well and this makes the transition not to follow what
-                has been set in the HTML file. So I have to add this corner case as well
-                inside if statement such that if the target page is neither homepage nor
-                info.*/
-        var regex=/#(info|homepage)$/;
-        if(('undefined' === typeof data.options.isDlgClosePressed) &&
-            ('string' === typeof data.toPage) &&
-            (!data.toPage.match(regex))) {
-
+        if(myResult && ("homepage" === data.toPage["0"].id)){
+            localStorage.setItem(localStorageKey,"#"+myResult[0]);
             data.options.transition = "flip";
-            data.options.isDlgClosePressed = true;
-//            console.log("close button is pressed");
         }
+
+
     });
 });
