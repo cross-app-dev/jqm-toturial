@@ -1,14 +1,3 @@
-/*************************
-Checklist of app delivery:
-
-1. The home page for the app should provide some basic information about what the tutorial topic is and a button to start the tutorial.
-
-2. info/about page that provides your personal info as the developer.
-
-5. At least half of the steps should have images.
-
-8. Your App must have a custom theme that you create with the theme roller and import.
-**************************/
 var localStorageKey = "show0017_step";
 var tutorialPagesPrefix = "#page-";
 
@@ -30,7 +19,7 @@ $(document).ready(function(ev){
     $('a:contains("Previous"),a:contains("Next")').on("click", function(ev){
         console.log("previous/next button has been clicked");
 
-        /* Prevent jQuery Mobile from perfroming any default actions.*/
+        /* Prevent jQuery Mobile from performing any default actions.*/
         ev.preventDefault();
 
         /* Apply page change options according to the pressed button. */
@@ -39,7 +28,7 @@ $(document).ready(function(ev){
             role:"page",
             transition:"slide",
 
-            /* This variable is used to differeniate whether the dialog is hidden because
+            /* This variable is used to differentiate whether the dialog is hidden because
              of close button is pressed or next/prev button is pressed. Since there is no
              special jquery mobile event for close button of the dialog. */
             isDlgClosePressed:false
@@ -58,10 +47,10 @@ $(document).ready(function(ev){
                                              pageChangeOpts);
     });
 
-    /* Set listene for page container object before changing any page. */
+    /* Set listener for page container object before changing any page. */
     $(document).on("pagecontainerbeforechange ", function(ev, data){
 
-        /* save laste visited page tutorial when closing. This can be achieved by
+        /* save last visited page tutorial when closing. This can be achieved by
         checking previous and target pages ids.*/
         var prevPageRegex=/(page-\d+)$/;
         if(data.prevPage)
