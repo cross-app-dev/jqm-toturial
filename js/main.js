@@ -64,7 +64,8 @@ $(document).ready(function(ev){
         /* save laste visited page tutorial when closing. This can be achieved by
         checking previous and target pages ids.*/
         var prevPageRegex=/(page-\d+)$/;
-        var myResult = data.prevPage["0"].id.match(prevPageRegex);
+        if(data.prevPage)
+            var myResult = data.prevPage["0"].id.match(prevPageRegex);
 
         if(myResult && ("homepage" === data.toPage["0"].id)){
             localStorage.setItem(localStorageKey,"#"+myResult[0]);
